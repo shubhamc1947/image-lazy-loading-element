@@ -51,7 +51,7 @@ loading="lazy" matlab jitna dikh rha utna hi pahle load karlo use kiya hai -->
             content: none;
         } */
         
-        .blurred-img {
+/*         .blurred-img {
              background-repeat: no-repeat;
              background-size: cover;
          }
@@ -60,9 +60,9 @@ loading="lazy" matlab jitna dikh rha utna hi pahle load karlo use kiya hai -->
             transition: opacity 250ms ease-in-out;
         }
 
-        .blurred-img.loaded img {
+        .blurred-img.loaded img { */
             /* opacity: 1; */
-        }
+     /*    } */
 
 
 
@@ -512,19 +512,7 @@ loading="lazy" matlab jitna dikh rha utna hi pahle load karlo use kiya hai -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
    <script>
-    const blurredImageDiv = document.querySelector(".blurred-img");
-    blurredImageDiv.array.forEach(div => {
-        const img = blurredImageDiv.querySelector("img");
-            function loaded() {
-                blurredImageDiv.classList.add("loaded")
-            }
-        
-            if (img.complete) {
-                loaded()
-            } else {
-                img.addEventListener("load", loaded)
-            }
-    });
+    
    </script>
   </body>
 </html>
