@@ -21,17 +21,29 @@ loading="lazy" matlab jitna dikh rha utna hi pahle load karlo use kiya hai -->
        .border{
             border:1px solid #222;
             box-shadow: 2px 0px 10px #333;
-       }
-
-
+        }
+        
+        
+        .blurred-img {
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
+        .blurred-img img {
+            opacity: 0;
+            transition: opacity 250ms ease-in-out;
+        }
+ 
+        .blurred-img.loaded img { 
+            opacity: 1;
+         } 
        
-       /* .blurred-img::before {
+       .blurred-img::before {
             content: "";
             position: absolute;
             inset: 0;
-            opacity: 0;
-            animation: pulse 2.5s infinite;
-            background-color:rbga(255,255,255,0.5);
+            opacity: 0.5;
+            animation: pulse 1s infinite;
+            background-color:white;
         }
 
         @keyframes pulse {
@@ -45,24 +57,12 @@ loading="lazy" matlab jitna dikh rha utna hi pahle load karlo use kiya hai -->
                 opacity: 0;
             }
         }
- */
-       /*  .blurred-img.loaded::before {
+ 
+        .blurred-img.loaded::before {
            animation: none;
             content: none;
-        } */
-        
-        .blurred-img {
-             background-repeat: no-repeat;
-             background-size: cover;
-         }
-        .blurred-img img {
-            opacity: 0;
-            transition: opacity 250ms ease-in-out;
         }
-
-        .blurred-img.loaded img { 
-            opacity: 1;
-         } 
+        
 
 
 
